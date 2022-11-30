@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    osvoboda:
+      email: ondrej.svoboda@keboola.com
+      name: Ondrej Svoboda
+      password: '$2b$12$BqT53WEnGDZ5D/PpPmWbteaHQbSBSFUUw.vEi.4p073AiPxI1FZVi' #'123' # To be replaced with hashed password
+    jkadlecek:
+      email: jan.kadlecek@marketing.bi
+      name: Jan Kadleček
+      password: '$2b$12$hPJ6EMG8L/VEdAk5mHKP4OGrIjTad52Pg4.gnAB8Y2smCiis.Z9Ou' # '456' # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - ondrej.svoboda@keboola.com
