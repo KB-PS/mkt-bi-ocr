@@ -4,7 +4,7 @@ from utilities import load_css
 
 st.set_page_config(page_title="Apples", page_icon="✉️")
 
-st.header("Results of invoice processing")
+#st.header("Results of invoice processing")
 
 load_css()
 
@@ -15,6 +15,10 @@ files = st.session_state.get("files", [])
 processing_results = []
 
 if files:
+    title = '<p style="font-family:sans-serif; color:#121212; font-size: 42px;">Results of invoice processing</p>'
+    st.markdown(title, unsafe_allow_html=True)
+
+
     for k,v in files.items():
         for item in v:
             ch = choice([True, False])

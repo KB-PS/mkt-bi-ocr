@@ -26,7 +26,9 @@ name, authentication_status, username = authenticator.login('Login', 'main')
     
 if st.session_state["authentication_status"]:
     authenticator.logout('Logout', 'main')
-    st.title('Welcome to the OCR application')
+    #st.title('Welcome to the OCR application')
+    title = '<p style="font-family:sans-serif; color:#121212; font-size: 42px;">Welcome to the OCR application</p>'
+    st.markdown(title, unsafe_allow_html=True)
     st.write(f'Welcome *{st.session_state["name"]}*')
 elif st.session_state["authentication_status"] == False:
     st.error('Username/password is incorrect')
@@ -41,11 +43,11 @@ if st.session_state["authentication_status"]:
     cols = st.columns(2)
     
     files = defaultdict(list)
-    #st.session_state["files"] = files
     
     with cols[0]:
         with st.container():
-            st.markdown("## Škoda auto")
+            skoda_title = '<p style="font-family:sans-serif; color:#121212; font-size: 36px;">Škoda auto</p>'
+            st.markdown(skoda_title, unsafe_allow_html=True)
             key = "spare_parts_skoda"
             spare_parts_skoda = st.file_uploader("Spare parts", accept_multiple_files=True, key=key)
             if spare_parts_skoda:
@@ -58,7 +60,8 @@ if st.session_state["authentication_status"]:
 
     with cols[1]:
         with st.container():
-            st.markdown("## Porsche")
+            porsche_title = '<p style="font-family:sans-serif; color:#121212; font-size: 36px;">Porsche</p>'
+            st.markdown(porsche_title, unsafe_allow_html=True)
             key = "new_cars_porsche"
             uploaded_files2 = st.file_uploader("Choose a Porsche invoice", accept_multiple_files=True, key=key)
             if uploaded_files2:
