@@ -2,7 +2,7 @@ import streamlit as st
 from random import choice
 from utilities import load_css
 
-st.set_page_config(page_title="Apples", page_icon="✉️")
+st.set_page_config(page_title="Apples")
 
 #st.header("Results of invoice processing")
 

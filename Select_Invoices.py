@@ -6,7 +6,7 @@ from utilities import load_css
 
 st.set_page_config(
     page_title="Invoice Processing",
-    page_icon="✉️",
+#    page_icon="✉️",
 )
 
 load_css()

@@ -2,7 +2,7 @@ import streamlit as st
 from utilities import load_css
 import pandas as pd
 
-st.set_page_config(page_title="Oranges", page_icon="✉️")
+st.set_page_config(page_title="Oranges")
 
 load_css()
 #st.header("Detailed log")
